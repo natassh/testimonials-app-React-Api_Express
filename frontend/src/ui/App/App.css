@@ -1,0 +1,55 @@
+.App {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, minmax(255px, 540px));
+  grid-gap: 24px 30px;
+  grid-auto-flow: dense;
+  padding: 2rem;
+}
+.cw {
+  width: 1110px;
+  margin: 0 auto;
+}
+.App .little {
+  grid-row: span 2;
+}
+.App .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.App .large {
+  grid-row: span 4;
+}
+ @media screen and (max-width: 1439px) {
+  .cw {
+    width: 1024px;
+  }
+  .App {
+    padding: 1rem;
+    grid-template-columns: repeat(4, minmax(217px, 540px));
+  }
+}
+@media screen and (max-width: 1023px) {
+  .cw {
+    width: 768px;
+  }
+  .App {
+    padding: 1rem;
+    grid-template-columns: repeat(2, minmax(125px, 1fr));
+    grid-gap: 20px 26px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cw {
+    width: 90%;
+  }
+  .App {
+    padding: 0;
+    grid-template-columns: repeat(1, minmax(255px, 1fr));
+    grid-gap: 15px 0px;
+  }
+  .App .big {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+}

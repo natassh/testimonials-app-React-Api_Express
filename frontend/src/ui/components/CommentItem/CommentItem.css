@@ -1,0 +1,62 @@
+article {
+  background-color: var(--white-color);
+  padding: 1.625rem 2rem 2rem 2rem;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+}
+.big.mainColor {
+  position: relative;
+}
+.big.mainColor:before {
+  display: block;
+  content: "";
+  width: 6.5rem;
+  height: 6.375rem;
+  background-image: url(../../assets/images/bg-pattern-quotation.svg);
+  background-size: 100%;
+  flex-shrink: 0;
+  position: absolute;
+  top: 0;
+  right: 80px;
+}
+article header {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 0.8125rem;
+}
+article .mainContent {
+  font-family: var(--main-font);
+  font-size: var(--font-size);
+  font-weight: var(--medium);
+  color: var( --white-color);
+  line-height: 1.125rem;
+}
+.mainContent p {
+  opacity: var(--second-opacity);
+  font-family: var(--main-font);
+  font-size: var(--font-size);
+  font-weight: var(--medium);
+  color: var( --white-color);
+  line-height: 1.125rem;
+}
+article.dark .mainContent p, article.dark .mainContent {
+  color: var(--second-color);
+}
+article.mainColor {
+  background-color: var(--main-color);
+}
+article.secondColor {
+  background-color: var(--second-color);
+}
+article.whiteColor {
+  background-color: var(--white-color);
+}
+article.thirdColor {
+  background-color: var(--third-color);
+}
+article.light {
+  color: var(--white-color);
+}
+article.dark {
+  color: var(--second-color);
+}
